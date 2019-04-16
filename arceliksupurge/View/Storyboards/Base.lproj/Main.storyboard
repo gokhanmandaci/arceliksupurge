@@ -29,9 +29,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="general_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-ku-Wcb">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silentpro" translatesAutoresizingMaskIntoConstraints="NO" id="htU-Vg-RPH">
-                                <rect key="frame" x="1008" y="376" width="16" height="16"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R1-Lm-4ay">
                                 <rect key="frame" x="56" y="163" width="512" height="426"/>
                                 <subviews>
@@ -157,16 +154,16 @@
                                 <rect key="frame" x="56" y="468" width="402" height="234"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-Ri-dAv">
-                                        <rect key="frame" x="0.0" y="400" width="36.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="400" width="130" height="107"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_speaking" translatesAutoresizingMaskIntoConstraints="NO" id="T8v-sR-OOp">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_speaking" translatesAutoresizingMaskIntoConstraints="NO" id="T8v-sR-OOp">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="1FN-32-oZQ">
-                                                <rect key="frame" x="7.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="101" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50s-nb-YhJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYP-JS-ykS"/>
                                                 </connections>
@@ -192,16 +189,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-AW-N58">
-                                        <rect key="frame" x="57.5" y="400" width="36.5" height="30"/>
+                                        <rect key="frame" x="151" y="400" width="130.5" height="107"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_birds" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-xW-oZN">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bird" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-xW-oZN">
+                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-BE-Oor">
-                                                <rect key="frame" x="7.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="101.5" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cho-Kz-Yoz">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6U-6Y-THd"/>
                                                 </connections>
@@ -227,16 +224,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-5R-ofe">
-                                        <rect key="frame" x="115" y="400" width="36.5" height="30"/>
+                                        <rect key="frame" x="302.5" y="400" width="130" height="107"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_music" translatesAutoresizingMaskIntoConstraints="NO" id="Dkb-Hd-kcB">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_music" translatesAutoresizingMaskIntoConstraints="NO" id="Dkb-Hd-kcB">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-SW-vKN">
-                                                <rect key="frame" x="7.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="101" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-F9-UX1">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eu-tc-QxA"/>
                                                 </connections>
@@ -262,16 +259,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGf-Ss-c5i">
-                                        <rect key="frame" x="0.0" y="604" width="36.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="527" width="130" height="107"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_baby" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-gf-0qp">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_baby" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-gf-0qp">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="UYt-bo-57Y">
-                                                <rect key="frame" x="7.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="101" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uu-pQ-kES">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTP-XS-IlP"/>
                                                 </connections>
@@ -298,16 +295,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmc-qH-5bX">
-                                        <rect key="frame" x="57.5" y="604" width="36.5" height="30"/>
+                                        <rect key="frame" x="151" y="527" width="130.5" height="107"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_vacuum" translatesAutoresizingMaskIntoConstraints="NO" id="QsH-sP-huj">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_vacuum" translatesAutoresizingMaskIntoConstraints="NO" id="QsH-sP-huj">
+                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-6F-su8">
-                                                <rect key="frame" x="7.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="101.5" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-dq-6sZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEw-Bt-96q"/>
                                                 </connections>
@@ -338,22 +335,27 @@
                                     <constraint firstAttribute="bottom" secondItem="QGf-Ss-c5i" secondAttribute="bottom" constant="-400" id="8Ky-2k-pzH"/>
                                     <constraint firstItem="q2e-Ri-dAv" firstAttribute="leading" secondItem="w4W-8R-eN5" secondAttribute="leading" id="AcH-jO-1jz"/>
                                     <constraint firstItem="Mmc-qH-5bX" firstAttribute="leading" secondItem="QGf-Ss-c5i" secondAttribute="trailing" constant="21" id="AmW-1h-M96"/>
+                                    <constraint firstItem="Rh8-5R-ofe" firstAttribute="width" secondItem="q2e-Ri-dAv" secondAttribute="width" id="Cbq-zA-r5z"/>
                                     <constraint firstItem="Rh8-5R-ofe" firstAttribute="top" secondItem="w4W-8R-eN5" secondAttribute="top" constant="400" id="Da7-Vz-r8E"/>
+                                    <constraint firstItem="Mmc-qH-5bX" firstAttribute="width" secondItem="q2e-Ri-dAv" secondAttribute="width" id="Koj-hL-ue0"/>
                                     <constraint firstItem="Rh8-5R-ofe" firstAttribute="width" secondItem="Rh8-5R-ofe" secondAttribute="height" multiplier="130:107" id="NW8-fU-vNH"/>
                                     <constraint firstItem="Mmc-qH-5bX" firstAttribute="width" secondItem="Mmc-qH-5bX" secondAttribute="height" multiplier="130:107" id="Prg-6D-Cz1"/>
                                     <constraint firstItem="s2Q-AW-N58" firstAttribute="width" secondItem="s2Q-AW-N58" secondAttribute="height" multiplier="130:107" id="Q0c-BD-BKK"/>
                                     <constraint firstItem="Rh8-5R-ofe" firstAttribute="leading" secondItem="s2Q-AW-N58" secondAttribute="trailing" constant="21" id="UhX-kH-WRJ"/>
                                     <constraint firstItem="s2Q-AW-N58" firstAttribute="leading" secondItem="q2e-Ri-dAv" secondAttribute="trailing" constant="21" id="V0i-ho-tpa"/>
+                                    <constraint firstItem="s2Q-AW-N58" firstAttribute="width" secondItem="q2e-Ri-dAv" secondAttribute="width" id="Vbv-Zl-ZTr"/>
                                     <constraint firstAttribute="bottom" secondItem="Mmc-qH-5bX" secondAttribute="bottom" constant="-400" id="bqu-vY-tmb"/>
+                                    <constraint firstItem="QGf-Ss-c5i" firstAttribute="width" secondItem="q2e-Ri-dAv" secondAttribute="width" id="cID-eK-xbW"/>
                                     <constraint firstItem="q2e-Ri-dAv" firstAttribute="width" secondItem="q2e-Ri-dAv" secondAttribute="height" multiplier="130:107" id="eBt-32-hK8"/>
                                     <constraint firstItem="q2e-Ri-dAv" firstAttribute="top" secondItem="w4W-8R-eN5" secondAttribute="top" constant="400" id="i7f-Ei-OZO"/>
+                                    <constraint firstItem="q2e-Ri-dAv" firstAttribute="width" secondItem="w4W-8R-eN5" secondAttribute="width" multiplier="0.324" id="lIo-Tx-HwH"/>
                                     <constraint firstItem="QGf-Ss-c5i" firstAttribute="leading" secondItem="w4W-8R-eN5" secondAttribute="leading" id="uMy-AI-OGX"/>
                                     <constraint firstItem="s2Q-AW-N58" firstAttribute="top" secondItem="w4W-8R-eN5" secondAttribute="top" constant="400" id="uVC-0I-NQJ"/>
                                     <constraint firstAttribute="width" secondItem="w4W-8R-eN5" secondAttribute="height" multiplier="67:39" id="z7m-hX-hlg"/>
                                 </constraints>
                             </view>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-xc-oM3">
-                                <rect key="frame" x="638" y="334" width="333" height="134"/>
+                                <rect key="frame" x="638" y="1018" width="333" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sessiz Süpürge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK7-WX-NZh">
                                         <rect key="frame" x="0.0" y="0.0" width="153" height="26"/>
@@ -390,12 +392,42 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQu-kR-Yo9">
-                                <rect key="frame" x="490" y="468" width="534" height="300"/>
+                                <rect key="frame" x="995.5" y="1152" width="28.5" height="16"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imperium_image" translatesAutoresizingMaskIntoConstraints="NO" id="bpO-Ag-Gvc">
+                                        <rect key="frame" x="0.0" y="0.0" width="28.5" height="16"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vacuum_play_back" translatesAutoresizingMaskIntoConstraints="NO" id="txd-sC-VzJ">
+                                        <rect key="frame" x="-285.5" y="-211" width="179" height="179"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="aAV-e1-vIE"/>
+                                            <constraint firstAttribute="height" constant="179" id="lk7-3m-66B"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-4E-z2z">
+                                        <rect key="frame" x="-204" y="-132.5" width="16" height="22"/>
+                                        <state key="normal" image="notpressed"/>
+                                        <connections>
+                                            <action selector="btnPlayerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYk-EO-zmk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="txd-sC-VzJ" secondAttribute="trailing" constant="135" id="5sf-b8-iQx"/>
+                                    <constraint firstItem="bpO-Ag-Gvc" firstAttribute="top" secondItem="yQu-kR-Yo9" secondAttribute="top" id="689-1r-kcY"/>
+                                    <constraint firstAttribute="bottom" secondItem="txd-sC-VzJ" secondAttribute="bottom" constant="48" id="6Ad-Og-WaS"/>
+                                    <constraint firstItem="bpO-Ag-Gvc" firstAttribute="leading" secondItem="yQu-kR-Yo9" secondAttribute="leading" id="Ezt-Mw-JKA"/>
+                                    <constraint firstItem="Sw4-4E-z2z" firstAttribute="centerY" secondItem="txd-sC-VzJ" secondAttribute="centerY" id="JJ1-03-tCp"/>
+                                    <constraint firstAttribute="bottom" secondItem="bpO-Ag-Gvc" secondAttribute="bottom" id="gUG-xU-ONK"/>
+                                    <constraint firstItem="Sw4-4E-z2z" firstAttribute="centerX" secondItem="txd-sC-VzJ" secondAttribute="centerX" id="sJY-Fb-wJc"/>
                                     <constraint firstAttribute="width" secondItem="yQu-kR-Yo9" secondAttribute="height" multiplier="89:50" id="vwn-YM-0O7"/>
+                                    <constraint firstAttribute="trailing" secondItem="bpO-Ag-Gvc" secondAttribute="trailing" id="yhh-qw-L26"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silentpro" translatesAutoresizingMaskIntoConstraints="NO" id="htU-Vg-RPH">
+                                <rect key="frame" x="1008" y="376" width="16" height="16"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="3R1-Lm-4ay" firstAttribute="width" secondItem="8Cz-ku-Wcb" secondAttribute="width" multiplier="0.5" id="6QC-fd-EKK"/>
@@ -405,13 +437,12 @@
                             <constraint firstItem="w4W-8R-eN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="F1j-eZ-iDf"/>
                             <constraint firstItem="8Cz-ku-Wcb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FrS-Hf-0bn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6hh-xc-oM3" secondAttribute="trailing" constant="53" id="KvR-eY-J5d"/>
-                            <constraint firstItem="yQu-kR-Yo9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nxm-3c-UFt"/>
+                            <constraint firstItem="yQu-kR-Yo9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="400" id="Nxm-3c-UFt"/>
                             <constraint firstItem="8Cz-ku-Wcb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OaS-Ej-qzT"/>
                             <constraint firstAttribute="bottom" secondItem="8Cz-ku-Wcb" secondAttribute="bottom" id="OvN-Mz-LVb"/>
                             <constraint firstItem="yQu-kR-Yo9" firstAttribute="top" secondItem="6hh-xc-oM3" secondAttribute="bottom" id="RoZ-zN-K4P"/>
                             <constraint firstItem="6hh-xc-oM3" firstAttribute="width" secondItem="8Cz-ku-Wcb" secondAttribute="width" multiplier="0.325" id="S3L-jD-Mdk"/>
                             <constraint firstItem="QeC-eQ-CV2" firstAttribute="centerY" secondItem="fHI-AG-hpV" secondAttribute="centerY" id="SQg-6N-Psk"/>
-                            <constraint firstItem="yQu-kR-Yo9" firstAttribute="top" secondItem="w4W-8R-eN5" secondAttribute="top" id="Txq-DV-Qh5"/>
                             <constraint firstItem="8Cz-ku-Wcb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XHp-wL-qWn"/>
                             <constraint firstItem="htU-Vg-RPH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XRL-6E-sWP"/>
                             <constraint firstItem="6hh-xc-oM3" firstAttribute="height" secondItem="Phf-AN-kFy" secondAttribute="height" id="YjB-ZG-LKv"/>
@@ -429,10 +460,12 @@
                     </view>
                     <connections>
                         <outlet property="btnBackTopConstraint" destination="i0y-3r-S0W" id="tbh-AO-3XC"/>
+                        <outlet property="btnPlayer" destination="Sw4-4E-z2z" id="q7d-3g-uJD"/>
                         <outlet property="btnTitle" destination="QeC-eQ-CV2" id="gpC-2V-ovL"/>
                         <outlet property="btnTry" destination="Nst-0D-d8c" id="5Yg-AD-jFn"/>
                         <outlet property="imgMainRight" destination="htU-Vg-RPH" id="gTQ-Sh-aaz"/>
                         <outlet property="imgMainTrailingConstraint" destination="XRL-6E-sWP" id="o1l-fS-gVg"/>
+                        <outlet property="imgPlayer" destination="txd-sC-VzJ" id="gJz-0B-2wN"/>
                         <outlet property="imgSoundBaby" destination="UYt-bo-57Y" id="48T-qv-sP4"/>
                         <outlet property="imgSoundBirds" destination="3NK-BE-Oor" id="C9c-cB-pa6"/>
                         <outlet property="imgSoundMusic" destination="KcE-SW-vKN" id="dtt-1w-E0L"/>
@@ -452,6 +485,8 @@
                         <outlet property="vwMainLeft" destination="3R1-Lm-4ay" id="kz3-YF-6Ge"/>
                         <outlet property="vwMusic" destination="Rh8-5R-ofe" id="ygj-9i-veZ"/>
                         <outlet property="vwMusicConstraint" destination="Da7-Vz-r8E" id="yZx-R2-CEl"/>
+                        <outlet property="vwPlayer" destination="yQu-kR-Yo9" id="69p-MO-RCw"/>
+                        <outlet property="vwPlayerConstraint" destination="Nxm-3c-UFt" id="nYz-TG-L3N"/>
                         <outlet property="vwRightInfo" destination="6hh-xc-oM3" id="jXB-Cj-wMh"/>
                         <outlet property="vwRightInfoConstraint" destination="RoZ-zN-K4P" id="glx-1d-Sk8"/>
                         <outlet property="vwSounds" destination="w4W-8R-eN5" id="sIk-yJ-8mp"/>
@@ -469,14 +504,17 @@
     <resources>
         <image name="arcelik_main_logo" width="213" height="52"/>
         <image name="back_button" width="32" height="32"/>
-        <image name="btn_baby" width="132" height="109"/>
-        <image name="btn_birds" width="132" height="109"/>
-        <image name="btn_music" width="132" height="109"/>
-        <image name="btn_speaking" width="132" height="109"/>
-        <image name="btn_vacuum" width="132" height="109"/>
         <image name="general_bg" width="1024" height="768"/>
+        <image name="icon_baby" width="56" height="48"/>
+        <image name="icon_bird" width="61" height="47"/>
+        <image name="icon_music" width="40" height="47"/>
+        <image name="icon_speaking" width="56" height="56"/>
+        <image name="icon_vacuum" width="56" height="55"/>
+        <image name="imperium_image" width="545" height="333"/>
+        <image name="notpressed" width="223" height="223"/>
         <image name="silentpro" width="475" height="694"/>
         <image name="sound_on" width="16" height="16"/>
         <image name="static_eq" width="24" height="20"/>
+        <image name="vacuum_play_back" width="179" height="179"/>
     </resources>
 </document>
