@@ -17,6 +17,8 @@ class MainVC: UIViewController {
     let headerTopVisible: CGFloat = 15
     let soundButtonsCommonStartingValue: CGFloat = 400
     let dbaArr = [92, 92, 84, 82, 91]
+    var willStop: Bool = false
+    var playinTag: Int = 0
     
     // Players
     var playerOne: AVAudioPlayer?
@@ -58,20 +60,34 @@ class MainVC: UIViewController {
     @IBOutlet weak var lblLeftInfo: UILabel!
     @IBOutlet weak var lblLeftDba: UILabel!
     @IBOutlet weak var lblLeftAverageDba: UILabel!
+    // Vacuum Player
+    @IBOutlet weak var vwPlayer: UIView!
+    @IBOutlet weak var imgPlayer: UIImageView!
+    @IBOutlet weak var btnPlayer: UIButton!
+    @IBOutlet weak var vwPlayerConstraint: NSLayoutConstraint!
     
     // MARK: Actions
     @IBAction func btnTryAction(_ sender: Any) {
         startingAnimations()
     }
     @IBAction func btnBackAction(_ sender: Any) {
-        guard let playerOne = playerOne else { return }
-        playerOne.stop()
-        guard let playerTwo = playerTwo else { return }
-        playerTwo.stop()
         backAnimations()
+        playinTag = 0
+        if let playerOne = playerOne {
+            playerOne.stop()
+        }
+        if let playerTwo = playerTwo {
+            if playerTwo.isPlaying {
+                animatePlayerButton()
+            }
+            playerTwo.stop()
+        }
     }
     @IBAction func btnLeftAudioAction(_ sender: UIButton) {
         startAudioAnimation(sender)
+    }
+    @IBAction func btnPlayerAction(_ sender: Any) {
+        animatePlayerButton()
     }
     
     override func viewDidLoad() {
@@ -116,6 +132,7 @@ extension MainVC {
             self.vwMainLeadingConstraint.constant = self.mainViewLeftValue
             self.imgMainTrailingConstraint.constant = 0
             self.btnBackTopConstraint.constant = self.headerTopHidden
+            self.vwPlayerConstraint.constant = self.soundButtonsCommonStartingValue
             self.view.layoutIfNeeded()
         }) { (isFin) in
             UIApplication.shared.endIgnoringInteractionEvents()
@@ -134,6 +151,10 @@ extension MainVC {
     }
     
     private func btnAnimations() {
+        UIView.animate(withDuration: 0.38) {
+            self.vwPlayerConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        }
         UIView.animate(withDuration: 0.44, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             self.vwSpakingConstraint.constant = 0
             self.view.layoutIfNeeded()
@@ -152,13 +173,13 @@ extension MainVC {
         }) { (isFin) in
             print(isFin)
         }
-        UIView.animate(withDuration: 0.44, delay: 0.44, usingSpringWithDamping: 0.75, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.44, delay: 0.25, usingSpringWithDamping: 0.75, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             self.vwBabyConstraint.constant = 0
             self.view.layoutIfNeeded()
         }) { (isFin) in
             print(isFin)
         }
-        UIView.animate(withDuration: 0.44, delay: 0.54, usingSpringWithDamping: 0.75, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.44, delay: 0.35, usingSpringWithDamping: 0.75, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             self.vwVacuumConstraint.constant = 0
             self.view.layoutIfNeeded()
         }) { (isFin) in
@@ -175,8 +196,50 @@ extension MainVC {
         }) { (isFin) in
             UIApplication.shared.endIgnoringInteractionEvents()
         }
-        setButtons(btn)
-        btnTitle.setTitle("Sessizliği Deneyimliyorsun", for: .normal)
+        if let playerOne = playerOne, playerOne.isPlaying && playinTag == btn.tag {
+            endAudioAnimation()
+            clearButtons()
+            playerOne.stop()
+            btnTitle.setTitle("Sesini Seç", for: .normal)
+        } else {
+            playinTag = btn.tag
+            setButtons(btn)
+            btnTitle.setTitle("Sessizliği Deneyimliyorsun", for: .normal)
+        }
+    }
+    
+    private func endAudioAnimation() {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        UIView.animate(withDuration: 0.44, animations: {
+            self.vwLeftInfoConstraint.constant = 0
+            self.vwLeftInfo.alpha = 0
+            self.view.layoutIfNeeded()
+        }) { (isFin) in
+            UIApplication.shared.endIgnoringInteractionEvents()
+        }
+        clearButtons()
+    }
+    
+    private func startSilentAnimation() {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        UIView.animate(withDuration: 0.44, animations: {
+            self.vwRightInfoConstraint.constant = 83
+            self.vwRightInfo.alpha = 1.0
+            self.view.layoutIfNeeded()
+        }) { (isFin) in
+            UIApplication.shared.endIgnoringInteractionEvents()
+        }
+    }
+    
+    private func endSilentAnimation() {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        UIView.animate(withDuration: 0.44, animations: {
+            self.vwRightInfoConstraint.constant = 0
+            self.vwRightInfo.alpha = 0
+            self.view.layoutIfNeeded()
+        }) { (isFin) in
+            UIApplication.shared.endIgnoringInteractionEvents()
+        }
     }
     
     private func setButtons(_ btn: UIButton) {
@@ -199,7 +262,6 @@ extension MainVC {
             imgSoundMusic.isHidden = false
             lblLeftAverageDba.text = "Ortalama Değer \(dbaArr[2]) dBA"
             guard let url = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return }
-            playSilentVacuum()
             playSound(url: url)
         case 4:
             vwBaby.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
@@ -218,18 +280,6 @@ extension MainVC {
         }
     }
     
-    private func endAudioAnimation() {
-        UIApplication.shared.beginIgnoringInteractionEvents()
-        UIView.animate(withDuration: 0.44, animations: {
-            self.vwLeftInfoConstraint.constant = 0
-            self.vwLeftInfo.alpha = 0
-            self.view.layoutIfNeeded()
-        }) { (isFin) in
-            UIApplication.shared.endIgnoringInteractionEvents()
-        }
-        clearButtons()
-    }
-    
     private func clearButtons() {
         btnTitle.setTitle("Sesini Seç", for: .normal)
         vwSpeaking.backgroundColor = .clear
@@ -237,6 +287,16 @@ extension MainVC {
         vwMusic.backgroundColor = .clear
         vwBaby.backgroundColor = .clear
         vwVacuum.backgroundColor = .clear
+        vwSpeaking.layer.borderColor = UIColor(displayP3Red: 76/255, green: 56/255, blue: 86/255, alpha: 1.0).cgColor
+        vwSpeaking.layer.borderWidth = 1
+        vwBirds.layer.borderColor = UIColor(displayP3Red: 76/255, green: 56/255, blue: 86/255, alpha: 1.0).cgColor
+        vwBirds.layer.borderWidth = 1
+        vwMusic.layer.borderColor = UIColor(displayP3Red: 76/255, green: 56/255, blue: 86/255, alpha: 1.0).cgColor
+        vwMusic.layer.borderWidth = 1
+        vwBaby.layer.borderColor = UIColor(displayP3Red: 76/255, green: 56/255, blue: 86/255, alpha: 1.0).cgColor
+        vwBaby.layer.borderWidth = 1
+        vwVacuum.layer.borderColor = UIColor(displayP3Red: 76/255, green: 56/255, blue: 86/255, alpha: 1.0).cgColor
+        vwVacuum.layer.borderWidth = 1
         imgSoundSpeaking.isHidden = true
         imgSoundBirds.isHidden = true
         imgSoundMusic.isHidden = true
@@ -275,6 +335,55 @@ extension MainVC {
             
         } catch let error {
             print(error.localizedDescription)
+        }
+    }
+}
+
+// Player View Functions
+extension MainVC {
+    private func animatePlayerImage() {
+        willStop = false
+        piAnimation(true)
+    }
+    
+    private func stopPlayerImage() {
+        willStop = true
+        piAnimation(false)
+    }
+    
+    private func piAnimation(_ fadein: Bool) {
+        if willStop {
+            self.imgPlayer.alpha = 0
+            return
+        }
+        var value: CGFloat = 0
+        if fadein { value = 1 } else { value = 0.15 }
+        UIView.animate(withDuration: 0.7, animations: {
+            self.imgPlayer.alpha = value
+        }) { (isFin) in
+            self.piAnimation(!fadein)
+        }
+    }
+    
+    private func animatePlayerButton() {
+        if let playerTwo = playerTwo, playerTwo.isPlaying {
+            playerTwo.stop()
+            stopPlayerImage()
+            endSilentAnimation()
+            btnPlayer.setImage(UIImage(named: "notpressed"), for: .normal)
+        } else {
+            startSilentAnimation()
+            UIView.animate(withDuration: 0.1, animations: {
+                self.btnPlayer.setImage(UIImage(named: "pressed"), for: .normal)
+                self.btnPlayer.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            }) { (isFin) in
+                UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                    self.btnPlayer.transform = CGAffineTransform.identity
+                }) { (isFin) in
+                    self.animatePlayerImage()
+                    self.playSilentVacuum()
+                }
+            }
         }
     }
 }
