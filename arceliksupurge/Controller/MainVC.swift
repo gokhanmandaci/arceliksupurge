@@ -63,6 +63,8 @@ class MainVC: UIViewController {
     @IBOutlet weak var lblLeftDba: UILabel!
     @IBOutlet weak var lblLeftAverageDba: UILabel!
     @IBOutlet weak var vwLeftEq: EqView!
+    @IBOutlet weak var imgRightEq: UIImageView!
+    @IBOutlet weak var imgLeftEq: UIImageView!
     // Vacuum Player
     @IBOutlet weak var vwPlayer: UIView!
     @IBOutlet weak var imgPlayer: UIImageView!
@@ -96,6 +98,10 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let imageDataLeft = try? Data(contentsOf: Bundle.main.url(forResource: "eq_imperium", withExtension: "gif")!)
+        imgLeftEq.image = UIImage.gifImageWithData(imageDataLeft!)
+        let imageDataRight = try? Data(contentsOf: Bundle.main.url(forResource: "eq_other", withExtension: "gif")!)
+        imgRightEq.image = UIImage.gifImageWithData(imageDataRight!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
