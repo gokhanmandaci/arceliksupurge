@@ -19,6 +19,8 @@
 		99356566226548E600FA7D7A /* normalvacuum.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 99356562226548E600FA7D7A /* normalvacuum.mp4 */; };
 		99356569226548F600FA7D7A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99356567226548F600FA7D7A /* music.mp3 */; };
 		9935656A226548F600FA7D7A /* birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99356568226548F600FA7D7A /* birds.mp3 */; };
+		99729B5F2266539700403446 /* EqView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99729B5E2266539700403446 /* EqView.xib */; };
+		99729B612266552000403446 /* EqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99729B602266552000403446 /* EqView.swift */; };
 		997A3ED122648F4F003A1998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A3ED022648F4F003A1998 /* AppDelegate.swift */; };
 		997A3ED322648F4F003A1998 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A3ED222648F4F003A1998 /* MainVC.swift */; };
 		997A3ED622648F4F003A1998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997A3ED422648F4F003A1998 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		997A3EDB22648F52003A1998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997A3EDA22648F52003A1998 /* Assets.xcassets */; };
 		997A3EDE22648F52003A1998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997A3EDC22648F52003A1998 /* LaunchScreen.storyboard */; };
 		997A3EEC2264915E003A1998 /* UIViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A3EEB2264915E003A1998 /* UIViewDesignable.swift */; };
+		997F8A1E226714F000109E26 /* ImageGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F8A1D226714F000109E26 /* ImageGif.swift */; };
+		997F8A202267161C00109E26 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 997F8A1F2267161C00109E26 /* test.gif */; };
 		9ABC842E4CED935327B50DBF /* Pods_arceliksupurge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232CD3018C5EECE8CB751E08 /* Pods_arceliksupurge.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,8 @@
 		99356562226548E600FA7D7A /* normalvacuum.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = normalvacuum.mp4; sourceTree = "<group>"; };
 		99356567226548F600FA7D7A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		99356568226548F600FA7D7A /* birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds.mp3; sourceTree = "<group>"; };
+		99729B5E2266539700403446 /* EqView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EqView.xib; sourceTree = "<group>"; };
+		99729B602266552000403446 /* EqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqView.swift; sourceTree = "<group>"; };
 		997A3ECD22648F4F003A1998 /* arceliksupurge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arceliksupurge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997A3ED022648F4F003A1998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		997A3ED222648F4F003A1998 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		997A3EDD22648F52003A1998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		997A3EDF22648F52003A1998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		997A3EEB2264915E003A1998 /* UIViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewDesignable.swift; sourceTree = "<group>"; };
+		997F8A1D226714F000109E26 /* ImageGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGif.swift; sourceTree = "<group>"; };
+		997F8A1F2267161C00109E26 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		A77C11C5E5D3953C439F46F9 /* Pods-arceliksupurge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arceliksupurge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-arceliksupurge/Pods-arceliksupurge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,9 +144,12 @@
 		997A3EE522648F78003A1998 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				997F8A1F2267161C00109E26 /* test.gif */,
 				997A3EE922648FB2003A1998 /* Storyboards */,
 				9935654C22651CB800FA7D7A /* Fonts */,
 				997A3EDA22648F52003A1998 /* Assets.xcassets */,
+				99729B5E2266539700403446 /* EqView.xib */,
+				99729B602266552000403446 /* EqView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +176,7 @@
 			children = (
 				99356551226522A300FA7D7A /* Extensions */,
 				997A3EEA22649151003A1998 /* IBDesignables */,
+				997F8A1D226714F000109E26 /* ImageGif.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -213,7 +225,6 @@
 				997A3EC922648F4F003A1998 /* Sources */,
 				997A3ECA22648F4F003A1998 /* Frameworks */,
 				997A3ECB22648F4F003A1998 /* Resources */,
-				2EE04BE0D7D770D021CF7BD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,8 +281,10 @@
 				9935654F22651CC900FA7D7A /* Font Bureau - HeronSans Bold.otf in Resources */,
 				997A3ED622648F4F003A1998 /* Main.storyboard in Resources */,
 				99356565226548E600FA7D7A /* baby.mp3 in Resources */,
+				99729B5F2266539700403446 /* EqView.xib in Resources */,
 				99356563226548E600FA7D7A /* speaking.mp3 in Resources */,
 				99356564226548E600FA7D7A /* vacuum.mp4 in Resources */,
+				997F8A202267161C00109E26 /* test.gif in Resources */,
 				9935655022651CC900FA7D7A /* Font Bureau - HeronSans Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,28 +292,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EE04BE0D7D770D021CF7BD5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-arceliksupurge/Pods-arceliksupurge-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FDWaveformView/FDWaveformView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDWaveformView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-arceliksupurge/Pods-arceliksupurge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		75E7B1CAA7022DD03C19412D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,12 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				997A3EEC2264915E003A1998 /* UIViewDesignable.swift in Sources */,
+				99729B612266552000403446 /* EqView.swift in Sources */,
 				997A3ED922648F4F003A1998 /* arceliksupurge.xcdatamodeld in Sources */,
 				99356553226522D200FA7D7A /* UIViewExt.swift in Sources */,
 				993565572265441A00FA7D7A /* UITextFieldExt.swift in Sources */,
 				993565582265441A00FA7D7A /* UILabelExt.swift in Sources */,
 				997A3ED322648F4F003A1998 /* MainVC.swift in Sources */,
 				997A3ED122648F4F003A1998 /* AppDelegate.swift in Sources */,
+				997F8A1E226714F000109E26 /* ImageGif.swift in Sources */,
 				993565592265441A00FA7D7A /* UIButtonExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

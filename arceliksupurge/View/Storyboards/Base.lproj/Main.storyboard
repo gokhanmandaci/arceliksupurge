@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,23 +23,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="arceliksupurge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="general_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-ku-Wcb">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R1-Lm-4ay">
-                                <rect key="frame" x="56" y="163" width="512" height="426"/>
+                                <rect key="frame" x="56" y="178" width="556" height="462"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arcelik_main_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Mpx-Xd-yZf">
-                                        <rect key="frame" x="0.0" y="0.0" width="213" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="56.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Mpx-Xd-yZf" secondAttribute="height" multiplier="213:52" id="6en-k5-Yxg"/>
                                         </constraints>
                                     </imageView>
                                     <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nst-0D-d8c">
-                                        <rect key="frame" x="0.0" y="316" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="342.5" width="450" height="119.5"/>
                                         <color key="backgroundColor" red="0.74901960784313726" green="0.14117647058823529" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Nst-0D-d8c" secondAttribute="height" multiplier="207:55" id="Nnq-ga-vvB"/>
@@ -58,13 +58,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imperium SilentPro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crR-K7-yO5">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="96.5" width="384" height="53"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Bold" family="HeronSans" pointSize="44"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum çekiş gücünü neredeyse sessiz elde edin. Nasıl mı? Denemek ister misiniz?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4d-if-glI">
-                                        <rect key="frame" x="0.0" y="167.5" width="512" height="98"/>
+                                        <rect key="frame" x="0.0" y="173.5" width="556" height="67.5"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Regular" family="HeronSans" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -98,51 +98,61 @@
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-eQ-CV2">
-                                <rect key="frame" x="432" y="-178" width="160" height="52"/>
+                                <rect key="frame" x="477.5" y="-178.5" width="157" height="53"/>
                                 <fontDescription key="fontDescription" name="HeronSans-Bold" family="HeronSans" pointSize="34"/>
                                 <state key="normal" title="Sesini Seç">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-AN-kFy">
-                                <rect key="frame" x="56" y="334" width="402" height="134"/>
+                                <rect key="frame" x="56" y="368.5" width="436.5" height="145.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ortam Sesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-V2-FCe">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="26"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="26"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Regular" family="HeronSans" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.79000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ev İçinde Sohbet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-6H-z0I">
-                                        <rect key="frame" x="0.0" y="35" width="213" height="33"/>
+                                        <rect key="frame" x="0.0" y="35" width="207.5" height="34"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Bold" family="HeronSans" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="static_eq" translatesAutoresizingMaskIntoConstraints="NO" id="Ntq-rf-Hgh">
-                                        <rect key="frame" x="0.0" y="84" width="16" height="16"/>
+                                        <rect key="frame" x="0.0" y="85" width="24" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="125 Desibel (dB)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miy-qx-TO6">
-                                        <rect key="frame" x="25" y="81.5" width="132.5" height="21"/>
+                                        <rect key="frame" x="33" y="84" width="119.5" height="22"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Regular" family="HeronSans" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ortalama Değer 92 dBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmC-6J-mOd">
-                                        <rect key="frame" x="25" y="108.5" width="149.5" height="17"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ortalama Değer 92 dBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmC-6J-mOd">
+                                        <rect key="frame" x="33" y="112" width="134.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Regular" family="HeronSans" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJz-FB-wik" customClass="EqView" customModule="arceliksupurge" customModuleProvider="target">
+                                        <rect key="frame" x="295.5" y="34" width="141" height="77"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="141" id="H2p-mX-yGt"/>
+                                            <constraint firstAttribute="height" constant="77" id="l1t-td-8lL"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YJz-FB-wik" secondAttribute="trailing" id="5rP-PM-9RL"/>
                                     <constraint firstItem="Ntq-rf-Hgh" firstAttribute="leading" secondItem="Phf-AN-kFy" secondAttribute="leading" id="97M-V9-ecg"/>
                                     <constraint firstItem="CuU-6H-z0I" firstAttribute="top" secondItem="4ae-V2-FCe" secondAttribute="bottom" constant="9" id="B1m-bu-l7u"/>
                                     <constraint firstItem="miy-qx-TO6" firstAttribute="leading" secondItem="Ntq-rf-Hgh" secondAttribute="trailing" constant="9" id="Hqp-pa-RoX"/>
                                     <constraint firstItem="Ntq-rf-Hgh" firstAttribute="top" secondItem="CuU-6H-z0I" secondAttribute="bottom" constant="16" id="Kp7-Ho-kwV"/>
                                     <constraint firstItem="4ae-V2-FCe" firstAttribute="top" secondItem="Phf-AN-kFy" secondAttribute="top" id="Qbe-Ne-4TS"/>
                                     <constraint firstItem="miy-qx-TO6" firstAttribute="centerY" secondItem="Ntq-rf-Hgh" secondAttribute="centerY" id="QnG-so-8S9"/>
+                                    <constraint firstItem="YJz-FB-wik" firstAttribute="centerY" secondItem="Phf-AN-kFy" secondAttribute="centerY" id="Usf-B3-vMJ"/>
                                     <constraint firstItem="4ae-V2-FCe" firstAttribute="leading" secondItem="Phf-AN-kFy" secondAttribute="leading" id="VwN-DB-k6t"/>
                                     <constraint firstItem="zmC-6J-mOd" firstAttribute="top" secondItem="miy-qx-TO6" secondAttribute="bottom" constant="6" id="ZuE-CL-0to"/>
                                     <constraint firstItem="zmC-6J-mOd" firstAttribute="leading" secondItem="miy-qx-TO6" secondAttribute="leading" id="iZw-3F-rYy"/>
@@ -151,19 +161,19 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4W-8R-eN5">
-                                <rect key="frame" x="56" y="468" width="402" height="234"/>
+                                <rect key="frame" x="56" y="514" width="436.5" height="254"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-Ri-dAv">
-                                        <rect key="frame" x="0.0" y="400" width="130" height="107"/>
+                                        <rect key="frame" x="0.0" y="400" width="141.5" height="116.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_speaking" translatesAutoresizingMaskIntoConstraints="NO" id="T8v-sR-OOp">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="1FN-32-oZQ">
-                                                <rect key="frame" x="101" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="112.5" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50s-nb-YhJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYP-JS-ykS"/>
                                                 </connections>
@@ -189,16 +199,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-AW-N58">
-                                        <rect key="frame" x="151" y="400" width="130.5" height="107"/>
+                                        <rect key="frame" x="162.5" y="400" width="141.5" height="116.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bird" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-xW-oZN">
-                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-BE-Oor">
-                                                <rect key="frame" x="101.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="112.5" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cho-Kz-Yoz">
-                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6U-6Y-THd"/>
                                                 </connections>
@@ -224,16 +234,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-5R-ofe">
-                                        <rect key="frame" x="302.5" y="400" width="130" height="107"/>
+                                        <rect key="frame" x="325" y="400" width="141" height="116.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_music" translatesAutoresizingMaskIntoConstraints="NO" id="Dkb-Hd-kcB">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141" height="116.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-SW-vKN">
-                                                <rect key="frame" x="101" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="112" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-F9-UX1">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141" height="116.5"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eu-tc-QxA"/>
                                                 </connections>
@@ -259,16 +269,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGf-Ss-c5i">
-                                        <rect key="frame" x="0.0" y="527" width="130" height="107"/>
+                                        <rect key="frame" x="0.0" y="537.5" width="141.5" height="116.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_baby" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-gf-0qp">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="UYt-bo-57Y">
-                                                <rect key="frame" x="101" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="112.5" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uu-pQ-kES">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTP-XS-IlP"/>
                                                 </connections>
@@ -295,16 +305,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmc-qH-5bX">
-                                        <rect key="frame" x="151" y="527" width="130.5" height="107"/>
+                                        <rect key="frame" x="162.5" y="537.5" width="141.5" height="116.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_vacuum" translatesAutoresizingMaskIntoConstraints="NO" id="QsH-sP-huj">
-                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound_on" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-6F-su8">
-                                                <rect key="frame" x="101.5" y="11" width="16" height="16"/>
+                                                <rect key="frame" x="112.5" y="11" width="16" height="16"/>
                                             </imageView>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-dq-6sZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="107"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="116.5"/>
                                                 <connections>
                                                     <action selector="btnLeftAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEw-Bt-96q"/>
                                                 </connections>
@@ -355,25 +365,25 @@
                                 </constraints>
                             </view>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-xc-oM3">
-                                <rect key="frame" x="638" y="1018" width="333" height="134"/>
+                                <rect key="frame" x="697.5" y="755.5" width="361.5" height="145.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sessiz Süpürge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK7-WX-NZh">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="26"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="26"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Regular" family="HeronSans" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.79000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imperium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD9-sI-4Wy">
-                                        <rect key="frame" x="0.0" y="35" width="118" height="33"/>
+                                        <rect key="frame" x="0.0" y="35" width="122" height="34"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Bold" family="HeronSans" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="static_eq" translatesAutoresizingMaskIntoConstraints="NO" id="oze-ig-wuO">
-                                        <rect key="frame" x="0.0" y="84" width="16" height="16"/>
+                                        <rect key="frame" x="0.0" y="85" width="24" height="20"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="82 Desibel (dB)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flF-WD-lJ2">
-                                        <rect key="frame" x="25" y="81.5" width="122.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="63 Desibel (dB)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flF-WD-lJ2">
+                                        <rect key="frame" x="33" y="84" width="114" height="22"/>
                                         <fontDescription key="fontDescription" name="HeronSans-Regular" family="HeronSans" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -392,20 +402,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQu-kR-Yo9">
-                                <rect key="frame" x="995.5" y="1152" width="28.5" height="16"/>
+                                <rect key="frame" x="519.5" y="901" width="592.5" height="333"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imperium_image" translatesAutoresizingMaskIntoConstraints="NO" id="bpO-Ag-Gvc">
-                                        <rect key="frame" x="0.0" y="0.0" width="28.5" height="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="592.5" height="333"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vacuum_play_back" translatesAutoresizingMaskIntoConstraints="NO" id="txd-sC-VzJ">
-                                        <rect key="frame" x="-285.5" y="-211" width="179" height="179"/>
+                                        <rect key="frame" x="278.5" y="106" width="179" height="179"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="179" id="aAV-e1-vIE"/>
                                             <constraint firstAttribute="height" constant="179" id="lk7-3m-66B"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-4E-z2z">
-                                        <rect key="frame" x="-204" y="-132.5" width="16" height="22"/>
+                                        <rect key="frame" x="256.5" y="84" width="223" height="223"/>
                                         <state key="normal" image="notpressed"/>
                                         <connections>
                                             <action selector="btnPlayerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYk-EO-zmk"/>
@@ -425,8 +435,8 @@
                                     <constraint firstAttribute="trailing" secondItem="bpO-Ag-Gvc" secondAttribute="trailing" id="yhh-qw-L26"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silentpro" translatesAutoresizingMaskIntoConstraints="NO" id="htU-Vg-RPH">
-                                <rect key="frame" x="1008" y="376" width="16" height="16"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silentpro_cat" translatesAutoresizingMaskIntoConstraints="NO" id="htU-Vg-RPH">
+                                <rect key="frame" x="539" y="92.5" width="573" height="649"/>
                             </imageView>
                         </subviews>
                         <constraints>
@@ -479,6 +489,7 @@
                         <outlet property="vwBabyConstraint" destination="8Ky-2k-pzH" id="3yx-I9-M4C"/>
                         <outlet property="vwBirds" destination="s2Q-AW-N58" id="r1i-0s-4os"/>
                         <outlet property="vwBirdsConstraint" destination="uVC-0I-NQJ" id="wlg-Xg-wYs"/>
+                        <outlet property="vwLeftEq" destination="YJz-FB-wik" id="Fbz-4l-ZiY"/>
                         <outlet property="vwLeftInfo" destination="Phf-AN-kFy" id="8UE-6d-1og"/>
                         <outlet property="vwLeftInfoConstraint" destination="p60-nG-Eog" id="dbj-wV-sl3"/>
                         <outlet property="vwMainLeadingConstraint" destination="7OY-ww-sdh" id="tgt-EA-vVa"/>
@@ -512,7 +523,7 @@
         <image name="icon_vacuum" width="56" height="55"/>
         <image name="imperium_image" width="545" height="333"/>
         <image name="notpressed" width="223" height="223"/>
-        <image name="silentpro" width="475" height="694"/>
+        <image name="silentpro_cat" width="573" height="649"/>
         <image name="sound_on" width="16" height="16"/>
         <image name="static_eq" width="24" height="20"/>
         <image name="vacuum_play_back" width="179" height="179"/>

@@ -16,9 +16,11 @@ class MainVC: UIViewController {
     let headerTopHidden: CGFloat = -200
     let headerTopVisible: CGFloat = 15
     let soundButtonsCommonStartingValue: CGFloat = 400
-    let dbaArr = [92, 92, 84, 82, 91]
+    let dbaTitleArr = ["Ev İçinde Sohbet", "Kuş Sesi", "Müzik Kutusu", "Bebek Gülüşü", "Normal Süpürge"]
+    let dbaArr = [84, 92, 82, 91, 74]
     var willStop: Bool = false
     var playinTag: Int = 0
+    let gifURL : String = "https://media.giphy.com/media/QrooGoDTEGK52/giphy.gif"
     
     // Players
     var playerOne: AVAudioPlayer?
@@ -60,6 +62,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var lblLeftInfo: UILabel!
     @IBOutlet weak var lblLeftDba: UILabel!
     @IBOutlet weak var lblLeftAverageDba: UILabel!
+    @IBOutlet weak var vwLeftEq: EqView!
     // Vacuum Player
     @IBOutlet weak var vwPlayer: UIView!
     @IBOutlet weak var imgPlayer: UIImageView!
@@ -99,6 +102,11 @@ class MainVC: UIViewController {
         super.viewWillAppear(animated)
         
         setUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
     
 }
@@ -196,6 +204,7 @@ extension MainVC {
         }) { (isFin) in
             UIApplication.shared.endIgnoringInteractionEvents()
         }
+        setButtonPressAnimation(btn)
         if let playerOne = playerOne, playerOne.isPlaying && playinTag == btn.tag {
             endAudioAnimation()
             clearButtons()
@@ -248,35 +257,66 @@ extension MainVC {
         case 1:
             vwSpeaking.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundSpeaking.isHidden = false
-            lblLeftAverageDba.text = "Ortalama Değer \(dbaArr[0]) dBA"
+            lblLeftInfo.text = dbaTitleArr[0]
+            lblLeftDba.text = "\(dbaArr[0]) Desibel [dBA] ort."
             guard let url = Bundle.main.url(forResource: "speaking", withExtension: "mp3") else { return }
             playSound(url: url)
         case 2:
             vwBirds.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundBirds.isHidden = false
-            lblLeftAverageDba.text = "Ortalama Değer \(dbaArr[1]) dBA"
+            lblLeftInfo.text = dbaTitleArr[1]
+            lblLeftDba.text = "\(dbaArr[1]) Desibel [dBA] ort."
             guard let url = Bundle.main.url(forResource: "birds", withExtension: "mp3") else { return }
             playSound(url: url)
         case 3:
             vwMusic.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundMusic.isHidden = false
-            lblLeftAverageDba.text = "Ortalama Değer \(dbaArr[2]) dBA"
+            lblLeftInfo.text = dbaTitleArr[2]
+            lblLeftDba.text = "\(dbaArr[2]) Desibel [dBA] ort."
             guard let url = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return }
             playSound(url: url)
         case 4:
             vwBaby.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundBaby.isHidden = false
-            lblLeftAverageDba.text = "Ortalama Değer \(dbaArr[3]) dBA"
+            lblLeftInfo.text = dbaTitleArr[3]
+            lblLeftDba.text = "\(dbaArr[3]) Desibel [dBA] ort."
             guard let url = Bundle.main.url(forResource: "baby", withExtension: "mp3") else { return }
             playSound(url: url)
         case 5:
             vwVacuum.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundVacuum.isHidden = false
-            lblLeftAverageDba.text = "Ortalama Değer \(dbaArr[4]) dBA"
+            lblLeftInfo.text = dbaTitleArr[4]
+            lblLeftDba.text = "\(dbaArr[4]) Desibel [dBA] ort."
             guard let url = Bundle.main.url(forResource: "normalvacuum", withExtension: "mp4") else { return }
             playSound(url: url)
         default:
             print("Unknown tag")
+        }
+    }
+    
+    private func setButtonPressAnimation(_ button: UIButton) {
+        var aView: UIView?
+        switch button.tag {
+        case 1:
+            aView = vwSpeaking
+        case 2:
+            aView = vwBirds
+        case 3:
+            aView = vwMusic
+        case 4:
+            aView = vwBaby
+        case 5:
+            aView = vwVacuum
+        default:
+            print("Unknown tag")
+        }
+        guard let vw = aView else { return }
+        UIView.animate(withDuration: 0.1, animations: {
+            vw.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }) { (isFin) in
+            UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                vw.transform = CGAffineTransform.identity
+            })
         }
     }
     
@@ -314,7 +354,7 @@ extension MainVC {
             playerOne = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
             guard let player = playerOne else { return }
-            
+            player.delegate = self
             player.play()
             
         } catch let error {
@@ -330,7 +370,7 @@ extension MainVC {
             playerTwo = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
             guard let player = playerTwo else { return }
-            
+            player.delegate = self
             player.play()
             
         } catch let error {
@@ -384,6 +424,14 @@ extension MainVC {
                     self.playSilentVacuum()
                 }
             }
+        }
+    }
+}
+
+extension MainVC: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if flag {
+            player.play()
         }
     }
 }
