@@ -16,7 +16,7 @@ class MainVC: UIViewController {
     let headerTopHidden: CGFloat = -200
     let headerTopVisible: CGFloat = 15
     let soundButtonsCommonStartingValue: CGFloat = 400
-    let dbaTitleArr = ["Ev İçinde Sohbet", "Kuş Sesi", "Müzik Kutusu", "Bebek Gülüşü", "Normal Süpürge"]
+    let dbaTitleArr = ["Ev İçinde Sohbet", "Kuş Sesi", "Müzik Kutusu", "Bebek Gülüşü", "Standart Süpürge"]
     let dbaArr = [84, 92, 82, 91, 74]
     var willStop: Bool = false
     var playinTag: Int = 0
