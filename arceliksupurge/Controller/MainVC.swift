@@ -264,35 +264,35 @@ extension MainVC {
             vwSpeaking.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundSpeaking.isHidden = false
             lblLeftInfo.text = dbaTitleArr[0]
-            lblLeftDba.text = "\(dbaArr[0]) Desibel [dBA] ort."
+            lblLeftDba.text = "\(dbaArr[0]) Desibel [dBA] ortalama"
             guard let url = Bundle.main.url(forResource: "speaking", withExtension: "mp3") else { return }
             playSound(url: url)
         case 2:
             vwBirds.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundBirds.isHidden = false
             lblLeftInfo.text = dbaTitleArr[1]
-            lblLeftDba.text = "\(dbaArr[1]) Desibel [dBA] ort."
+            lblLeftDba.text = "\(dbaArr[1]) Desibel [dBA] ortalama"
             guard let url = Bundle.main.url(forResource: "birds", withExtension: "mp3") else { return }
             playSound(url: url)
         case 3:
             vwMusic.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundMusic.isHidden = false
             lblLeftInfo.text = dbaTitleArr[2]
-            lblLeftDba.text = "\(dbaArr[2]) Desibel [dBA] ort."
+            lblLeftDba.text = "\(dbaArr[2]) Desibel [dBA] ortalama"
             guard let url = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return }
             playSound(url: url)
         case 4:
             vwBaby.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundBaby.isHidden = false
             lblLeftInfo.text = dbaTitleArr[3]
-            lblLeftDba.text = "\(dbaArr[3]) Desibel [dBA] ort."
+            lblLeftDba.text = "\(dbaArr[3]) Desibel [dBA] ortalama"
             guard let url = Bundle.main.url(forResource: "baby", withExtension: "mp3") else { return }
             playSound(url: url)
         case 5:
             vwVacuum.backgroundColor = UIColor(displayP3Red: 191/255, green: 45/255, blue: 57/255, alpha: 1.0)
             imgSoundVacuum.isHidden = false
             lblLeftInfo.text = dbaTitleArr[4]
-            lblLeftDba.text = "\(dbaArr[4]) Desibel [dBA] ort."
+            lblLeftDba.text = "\(dbaArr[4]) Desibel [dBA] ortalama"
             guard let url = Bundle.main.url(forResource: "normalvacuum", withExtension: "mp4") else { return }
             playSound(url: url)
         default:
